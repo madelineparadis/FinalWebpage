@@ -1,0 +1,218 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(#fff 20%, transparent 20%),
+        radial-gradient(#b3e6ff 20%, transparent 20%);
+    background-color: #66c2ff;
+    background-position: 15 15, 15px 15px;
+    background-size: 5px 5px;
+  }
+
+:root {
+  --main-flower: #517bd6;
+  --nose: #ffc0cb;
+  --stem: #51d691;
+  --pot: #FF7043;
+  --pot-shadow: #d66f51;
+}
+
+.flower {
+  position: relative;
+}
+
+.flower__head {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--main-flower);
+  margin-top: 200px;
+  margin-left: 30px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.flower__head::after, .flower__head::before {
+  content: '';
+  position: absolute;
+  background: var(--main-flower);
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  transform: rotate(60deg);
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.flower__head::before {
+  transform: rotate(-60deg);
+}
+
+
+
+
+.flower__head2 {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--main-flower);
+  margin-top: -35px;
+  margin-left: 600px;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.flower__head2::after, .flower__head2::before {
+  content: '';
+  position: absolute;
+  background: var(--main-flower);
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  transform: rotate(60deg);
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.flower__head2::before {
+  transform: rotate(-60deg);
+}
+
+
+
+
+.flower__head3 {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--main-flower);
+  margin-top: -45px;
+  margin-left: 315px;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.flower__head3::after, .flower__head3::before {
+  content: '';
+  position: absolute;
+  background: var(--main-flower);
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  transform: rotate(60deg);
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.flower__head3::before {
+  transform: rotate(-60deg);
+}
+/* The animation code */
+@keyframes example {
+ 0%   {background-color: pink;}
+ 16%  {background-color: red;}
+ 32%  {background-color: blue;}
+ 48% {background-color: pink;}
+ 60%  {background-color: red;}
+ 76%  {background-color: blue;}
+ 100%  {background-color: pink;}
+}
+
+/* The animation code */
+@keyframes example2 {
+ 0%   {background-color: blue;}
+ 16%  {background-color: pink;}
+ 32%  {background-color: red;}
+ 48% {background-color: blue;}
+ 60%  {background-color: pink;}
+ 76%  {background-color: red;}
+ 100%  {background-color: blue;}
+}
+
+/* The animation code */
+@keyframes example3 {
+  0%   {background-color: red;}
+  16%  {background-color: blue;}
+  32%  {background-color: pink;}
+  48% {background-color: red;}
+  60%  {background-color: blue;}
+  76%  {background-color: pink;}
+  100%  {background-color: red;}
+ }
+
+ #eye {
+   position: absolute;
+   right: 500px;
+   top: 193px;
+   width: 50px;
+   height: 50px;
+   margin-top: 0px;
+   margin-left: 330px;
+   border-radius: 50px;
+   background: #66c2ff;
+   animation-name: example4;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-play-state: paused;
+   animation-timing-function: ease-in-out;
+ }
+
+
+ #eye2 {
+   position: absolute;
+   right: 500px;
+   top: 193px;
+   width: 50px;
+   height: 50px;
+   margin-top: -190px;
+   margin-left: -305px;
+   border-radius: 50px;
+   background: #66c2ff;
+   animation-name: example4;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-play-state: paused;
+   animation-timing-function: ease-in-out;
+ }
+
+ #eye3 {
+   position: absolute;
+   right: 500px;
+   top: 193px;
+   width: 50px;
+   height: 50px;
+   margin-top: -190px;
+   margin-left: 550px;
+   border-radius: 50px;
+   background: #66c2ff;
+   animation-name: example4;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-play-state: paused;
+   animation-timing-function: ease-in-out;
+ }
+   /* The animation code */
+   @keyframes example4 {
+     0%   {left:20px;}
+     16%  {left:30px;}
+     32%  {left:30px;}
+     48% {left:10px;}
+     60%  {left:10px;}
+     76%  {left:20px;}
+     100%  {left:20px;}
+ }
+
+#eye:hover {
+  animation-play-state: running;
+}
